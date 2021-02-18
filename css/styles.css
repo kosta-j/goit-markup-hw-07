@@ -169,7 +169,7 @@ body {
   fill: currentColor;
 }
 
-/* section */
+/* section title */
 .section .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -345,9 +345,6 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-.hero .button {
 }
 /* HERO end */
 /* ============================== */
