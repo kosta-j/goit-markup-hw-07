@@ -38,10 +38,10 @@ li {
 
 body {
   margin: auto;
-  color: var(--primary-text-color);
-  background-color: var(--main-bg-color);
+  color: $primary-text-color;
+  background-color: $main-bg-color;
 
   font-weight: 400;
-  font-family: var(--main-font-family);
+  font-family: $main-font-family;
   letter-spacing: 0.03em;
 }

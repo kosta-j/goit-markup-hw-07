@@ -1,8 +1,4 @@
 /* WHAT WE DO */
-.whatwedo-container {
-  padding-top: 0;
-}
-
 .whatwedo {
   display: flex;
   flex-wrap: wrap;
@@ -24,7 +20,7 @@
   padding: 27px 15px;
 
   background-color: rgba(47, 48, 58, 0.8);
-  color: var(--main-bg-color);
+  color: $main-bg-color;
 
   font-weight: 700;
   font-size: 14px;

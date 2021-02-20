@@ -20,6 +20,10 @@
   text-align: center;
 }
 
+.whatwedo-container {
+  padding-top: 0;
+}
+
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -27,5 +31,5 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  color: var(--main-bg-color);
+  color: $main-bg-color;
 }

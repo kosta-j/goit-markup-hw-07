@@ -2,14 +2,14 @@
 .logo {
   font-weight: 700;
   font-size: 26px;
-  font-family: var(--logo-font-family);
+  font-family: $logo-font-family;
   line-height: 1.19;
 }
 
 .logo-span {
   .header-logo &,
   .footer-logo & {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
@@ -17,11 +17,11 @@
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .footer-logo {
   display: block;
   margin-bottom: 20px;
-  color: var(--main-bg-color);
+  color: $main-bg-color;
 }
