@@ -27,48 +27,49 @@
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.clients-icon-link:hover,
-.clients-icon-link:focus {
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .clients-icon {
   width: 80px;
   height: 50px;
   fill: currentColor;
+
+  &.company-1 {
+    width: 44px;
+    height: 49px;
+  }
+
+  &.company-2 {
+    width: 40px;
+    height: 52px;
+  }
+
+  &.company-3 {
+    width: 41px;
+    height: 43px;
+  }
+
+  &.company-4 {
+    width: 80px;
+    height: 42px;
+  }
+
+  &.company-5 {
+    width: 59px;
+    height: 47px;
+  }
+
+  &.company-6 {
+    width: 88px;
+    height: 45px;
+  }
 }
 
-.clients-icon.company-1 {
-  width: 44px;
-  height: 49px;
-}
-
-.clients-icon.company-2 {
-  width: 40px;
-  height: 52px;
-}
-
-.clients-icon.company-3 {
-  width: 41px;
-  height: 43px;
-}
-
-.clients-icon.company-4 {
-  width: 80px;
-  height: 42px;
-}
-
-.clients-icon.company-5 {
-  width: 59px;
-  height: 47px;
-}
-
-.clients-icon.company-6 {
-  width: 88px;
-  height: 45px;
-}
 /* CLIENTS end */
 /* ============================== */

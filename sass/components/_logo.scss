@@ -6,7 +6,22 @@
   line-height: 1.19;
 }
 
-.header-logo .logo-span,
-.footer-logo .logo-span {
-  color: var(--accent-color);
+.logo-span {
+  .header-logo &,
+  .footer-logo & {
+    color: var(--accent-color);
+  }
+}
+
+.header-logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: var(--title-text-color);
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--main-bg-color);
 }

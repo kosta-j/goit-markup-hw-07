@@ -6,3 +6,26 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.hero-container {
+  padding: 200px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  color: var(--main-bg-color);
+}

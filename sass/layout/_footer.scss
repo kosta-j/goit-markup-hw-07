@@ -4,37 +4,19 @@
   background-color: var(--secondary-dark-bg-color);
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  color: var(--main-bg-color);
-}
-
 /* contacts block */
-.footer-wrapper-contacts {
-}
 
 .page-adress {
   min-width: 231px;
-}
 
-.page-adress .item:not(:last-child) {
-  margin-bottom: 9px;
+  & .item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-adress {
   font-size: 14px;
   line-height: 1.71;
-}
-
-.footer-logo {
-  display: block;
-  margin-bottom: 20px;
-  color: var(--main-bg-color);
 }
 
 .footer-contacts {
@@ -45,66 +27,39 @@
   letter-spacing: 0.03em;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-contacts:hover,
-.footer-contacts:focus {
-  color: var(--accent-color);
-}
-
-.page-footer .title {
-  margin-bottom: 20px;
-
-  color: var(--main-bg-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-/* social icons block */
-.footer-wrapper-social {
-}
-
-.page-footer .social-link {
-  color: var(--main-bg-color);
-  background-color: rgba(255, 255, 255, 0.1);
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.page-footer .social-link:hover,
-.page-footer .social-link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 /* subscribe block */
-.footer-subscribe-form .form-label {
-  display: block;
+.footer-subscribe-form {
+  & .form-label {
+    display: block;
+  }
+  & .form-input {
+    min-width: 358px;
+    min-height: 50px;
+    margin-right: 12px;
+    padding-left: 16px;
+
+    background-color: transparent;
+    color: var(--main-bg-color);
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
 }
 
-.footer-subscribe-form .button {
-}
-
-.footer-subscribe-form .form-input {
-  min-width: 358px;
-  min-height: 50px;
-  margin-right: 12px;
-  padding-left: 16px;
-
-  background-color: transparent;
-  color: var(--main-bg-color);
-
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-}
-
-.footer-subscribe-form .form-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
 /* FOOTER end */
 /* ============================== */
