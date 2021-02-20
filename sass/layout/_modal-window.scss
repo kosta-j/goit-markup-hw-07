@@ -11,8 +11,7 @@
   opacity: 1;
   transform: scale(1);
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition-2-selectors(opacity, transform);
 }
 
 .modal {
@@ -30,7 +29,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition-1-selector(transform);
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.9);
@@ -82,13 +81,13 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition-1-selector(border);
 
   &:focus,
   &:hover {
     cursor: pointer;
     outline: none;
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
   }
 }
 
@@ -101,7 +100,8 @@
   width: 18px;
   height: 18px;
   fill: $title-text-color;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include transition-1-selector(fill);
 
   .modal-form-input:focus + &,
   .modal-form-input:hover + & {
@@ -122,7 +122,8 @@
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include transition-1-selector(border);
 
   &::placeholder {
     font-size: 12px;
@@ -164,7 +165,8 @@
   margin-right: 7px;
 
   background-image: url('../images/modal-window/checkbox.svg');
-  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include transition-1-selector(background-image);
 
   .modal-form-check-policy:checked + & {
     background-image: url('../images/modal-window/checkbox-checked.svg');

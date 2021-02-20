@@ -25,8 +25,7 @@
     color: $icon-light-grey-color;
     background-color: $main-bg-color;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition-2-selectors(transition, background-color);
   }
 
   &:hover,
@@ -39,7 +38,7 @@
     color: $main-bg-color;
     background-color: rgba(255, 255, 255, 0.1);
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition-1-selector(background-color);
 
     &:hover,
     &:focus {

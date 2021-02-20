@@ -18,7 +18,7 @@
   border-radius: 4px;
   box-shadow: 0;
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition-1-selector(box-shadow);
 
   &:hover,
   &:focus {
@@ -45,9 +45,7 @@
 
     box-shadow: 0;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition-3-selectors(color, background-color, box-shadow);
 
     &:focus,
     &:hover {
